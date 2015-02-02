@@ -7,7 +7,13 @@
 	
  <body>
 	<div id="container">
+
+
+ 
+
 <?php
+
+   session_start();
 
         $servername = "localhost";
 	$username = "nmicic";
@@ -31,18 +37,24 @@
 
 //matching entered data with that in the data base, 
 
+
+
 if(isset($_POST['submit'])){
 	
   $query = "select username, password from users where username='$user' and password='$pass' ";
   $response = mysqli_query($conn, $query) or trigger_error(mysqli_error().$query);
 
-   if($response){
+    $row = mysqli_fetch_assoc($response);
+  
+   $_SESSION['user'] = $_POST['user'];
+  
 
-    while($row = mysqli_fetch_array($response)){
-      
-      echo "Welcome " .$row['username']. " to the BUWFC admin page";
+  
+   if($row != null){
+
+      echo "Welcome " .$_SESSION['user']. " to the BUWFC admin page";
 	
-    }
+ 
 
    } else {
 
@@ -58,6 +70,11 @@ if(isset($_POST['submit'])){
 
 <form >
 
+   <form action="mredit.php" method="POST">
+   Match Reports:<br>
+   <input type="submit" name="mredit" value="Go!">
+<br>
+   </form>
 
 </div>
 
