@@ -25,6 +25,12 @@ else{
 }
 
 ?>
+
+<form action="matchcheck.php" method="POST">
+  Date:<br>
+  <input type=
+
+
 </div>
 
 </body>
