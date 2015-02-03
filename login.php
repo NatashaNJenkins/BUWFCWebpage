@@ -57,8 +57,9 @@ if(isset($_POST['submit'])){
  
 
    } else {
-
-    echo 'Either your username or password is wrong';
+     
+     //This part redirects to the specified page
+     header('Location: login.html');
 
    }
 
