@@ -6,8 +6,6 @@
 	
  <body>
 	<div id="container">
-	
-Please ener your login details
 
 	  <form action="login.php" method="POST">
 		Admin User:<br>

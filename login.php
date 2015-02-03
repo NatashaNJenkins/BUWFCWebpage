@@ -8,12 +8,7 @@
  <body>
 	<div id="container">
 
-
- 
-
-<?php
-
-   session_start();
+<?php session_start();
 
         $servername = "localhost";
 	$username = "nmicic";
@@ -22,6 +17,7 @@
 
 	$tablename = "users";
 
+      
         $user = $_POST['user'];
 	$pass = $_POST['pass']; 
 
@@ -46,21 +42,19 @@ if(isset($_POST['submit'])){
 
     $row = mysqli_fetch_assoc($response);
   
-   $_SESSION['user'] = $_POST['user'];
-  
-
+    $_SESSION['user'] = $user;
   
    if($row != null){
 
       echo "Welcome " .$_SESSION['user']. " to the BUWFC admin page";
 	
- 
+      
 
    } else {
      
      //This part redirects to the specified page
      header('Location: login.html');
-
+     exit();
    }
 
   mysqli_close($conn);
@@ -69,13 +63,13 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<form >
+
 
    <form action="mredit.php" method="POST">
    Match Reports:<br>
    <input type="submit" name="mredit" value="Go!">
 <br>
-   </form>
+</form>
 
 </div>
 
