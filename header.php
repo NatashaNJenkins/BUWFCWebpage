@@ -18,6 +18,7 @@
 	<a class="menuItem" href="socialEvents.php"><li class="button" id="mainButtons"><center>Social Events</center></li></a>
 	<a class="menuItem" href="profiles.php"><li class="button" id="mainButtons"><center>Profiles</center></li></a>
 	<a class="menuItem" href="index.php"><li class="button" id="mainButtons"><center>Home</center></li></a>
+	<a class="menuItem" href="login.php"><li class="button" id="mainButtons"><center>Admin Login</center></li></a>
 	</ul>
 	
 	

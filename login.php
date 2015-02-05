@@ -1,3 +1,4 @@
+
 <?php
 	include 'header.php';
 	include "functions.php";
@@ -23,22 +24,30 @@ if(isset($_POST['username']) && $_POST['password']){
 	  header('Location: admin.php');
     }
 
-   } else {
+   }else {
 
-    echo 'Either your username or password is wrong';
+    echo "Either your username or password is wrong";
 
    }
 
   mysqli_close($conn);
 
-}	else {
-	?>
-	<form action="" method="POST">
-	Username: <input type="text" name="username"></input> <br /><br />
-	Password: <input type="password" name="password"></input> <br /><br />
-	<input type='submit'></input>  <br />
-	</form>
-	<?php
-	}
+}else{
+
+  echo "Please enter a username and password.";
+
+}
+
+
+?>	
+
+ <form action="" method="POST">
+  Username: <input type="text" name="username"></input> <br /><br />
+  Password: <input type="password" name="password"></input> <br /><br />
+  <input type='submit'></input>  <br />
+  </form>
+
+
+<?php
 	include 'footer.php';
 ?>

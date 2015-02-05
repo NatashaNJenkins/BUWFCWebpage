@@ -6,14 +6,14 @@ function checkUser()	{
 		echo '<div id="adminWidget">You are logged in as ' . $_SESSION['buwfclogin'] . ' !<br /> <a href="logout.php">logout</a></div>';
 		}
 	else
-		echo header('Location: index.php');
-	}
+		echo header('Location: login.php');
+        }
 	
 function connectToDb() {
 	//DB connection data ++TO ENCAPSULATE
     $servername = "localhost";
-	$username = "root";
-	$password = "";
+	$username = "nmicic";
+	$password = "pa55word";
 	$db = "nmicic";
 
 
@@ -28,4 +28,6 @@ function connectToDb() {
 
 	return $conn;
 	}
+
+
 ?>
