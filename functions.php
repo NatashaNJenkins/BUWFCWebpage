@@ -14,7 +14,8 @@ function connectToDb() {
     $servername = "localhost";
 	$username = "nmicic";
 	$password = "pa55word";
-	$db = "nmicic";
+	$db = "nmicic"; 
+	
 
 
         // Create connection 
