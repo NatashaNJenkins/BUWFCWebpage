@@ -1,8 +1,10 @@
+<html>
 <?php 
 
  include 'header.php';
  include 'functions.php';
  
+
  $conn = connectToDb();
 	$query = "SELECT * FROM `player_profiles`";
 	$response = mysqli_query($conn, $query);
@@ -13,3 +15,4 @@
 		}
  include 'footer.php';
 ?>
+</html>
