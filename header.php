@@ -24,6 +24,16 @@
     <link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />  
     <link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
 
+    <style>
+    	body {
+    		background-color: #D93E41;
+    	}
+
+    	p {
+    		color: #fff;
+    	}
+    </style>
+
 </head>
 
 <body>
@@ -45,13 +55,11 @@
 	<a class="menuItem" href="socialEvents.php"><li class="button" id="mainButtons"><center>Social Events</center></li></a>
 	<a class="menuItem" href="profiles.php"><li class="button" id="mainButtons"><center>Profiles</center></li></a>
 	<a class="menuItem" href="index.php"><li class="button" id="mainButtons"><center>Home</center></li></a>
-	<a class="menuItem" href="login.php"><li class="button" id="mainButtons"><center>Admin Login</center></li></a>
 	</ul>
-
-                </div>
+	            </div>
             </div>
         </div>
-    </div>
+	</div>
 </div>
 
 <!-- CONTENT START -->

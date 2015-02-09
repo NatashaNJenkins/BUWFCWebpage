@@ -1,6 +1,9 @@
 <?php 
 include 'header.php';
 
+echo "	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">\n"; 
+echo "	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/custom.css\">\n"; 
+echo "	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/admin.css\">\n";
 echo "<div id=\"decorative1\" style=\"position:relative\">\n"; 
 echo "    <div class=\"container\">\n"; 
 echo "        <div class=\"divPanel headerArea\">\n"; 
@@ -18,7 +21,7 @@ echo "    <div class=\"divPanel page-content\">\n";
 echo "        <div class=\"row-fluid\">\n"; 
 echo "                <div class=\"span12\" id=\"divMain\">\n"; 
 echo "\n"; 
-echo "                    <h1>Welcome</h1><br/>\n"; 
+echo "                    <h1>Welcome</h1>\n"; 
 echo "                    <p>We are the Bradford University Womens football club. Women’s Football is a friendly and diverse club for people of all abilities to come together and have fun, whilst learning new skills and developing as players. We train twice a week and play our matches on Wednesday afternoons, which gives you lots of opportunities to come down and join us. Our coach is very friendly and highly qualified, offering brilliant training sessions. <br/><br/>\n"; 
 echo "                        Last year we had our most successful year as a club, winning both the league and varsity, for the first time in 4 years. For the second year in a row, we also raised the most money for charity, over £2000 by partaking in activities across the university. We hope to continue this success and that you too will be a part of it! <br/><br/>\n"; 
 echo "                        We are a very social club, meeting regularly outside of football, making friendships that last a lifetime! So keep a look out for our stall at Freshers’ Fayre, meet the team and join the BUWFC family!\n"; 
