@@ -37,7 +37,7 @@ $conn->close();
 ?>
 
 <form action="" method="POST">
-  Date  <input type="text" name="date"></input> <br><br>
+  Date  <input type="date" name="date"></input> <br><br>
   Location  <input type="text" name="location"></input> <br><br>
   Opposition  <input type="text" name="opposition"></input> <br><br>
   Man of The Match  <input type="text" name="man"></input> <br><br>
