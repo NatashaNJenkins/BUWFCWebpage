@@ -4,21 +4,19 @@ include "header.php";
 include "functions.php";
 checkUser();
 
-if (isset($_POST["sub"])){
+if (isset($_POST['sub'])){
 
-  $date = $_POST["date"];
-  $loc = $_POST["location"];
-  $opp = $_POST["opposition"];
-  $man = $_POST["man"];
-  $mup = $_POST["muppet"];
-  $rep = $_POST["report"];  
+  $date = $_POST['date'];
+  $loc = $_POST['location'];
+  $opp = $_POST['opposition'];
+  $man = $_POST['man'];
+  $mup = $_POST['muppet'];
+  $rep = $_POST['report'];  
   
-
-  $conn = connectToDb();
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+  if($_POST['date']=="" || $_POST['location']=="" || $_POST['opposition']=="" || $_POST['report']){
+    echo "please fill in all necessary fields";
+  }else{
+ 
 
 $sql = "INSERT INTO `Match` (`Date`, `Location`, `Opposition`,`Man_of_Match`,`Muppet_of_Match`, `Report`)
                    VALUES ('".$date."', '".$loc."', '".$opp."', '".$man."','".$mup."','".$rep."')";
@@ -30,7 +28,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close(); 
-
+  }
 
 }
 

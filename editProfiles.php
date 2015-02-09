@@ -48,15 +48,18 @@
 	<?php 
 		if (isset($_POST["sub"])){
 
-	  $name = $_POST["Name"];
-	  $dob = $_POST["DOB"];
-	  $course = $_POST["Course"];
-	  $yrOfStudy = $_POST["YearOfStudy"];
-	  $yrsOfActivity = $_POST["YearsOfActivity"];
-	  $position = $_POST["Position"];  
-	  $tag = $_POST["Tag"];  
-	  $hobbies = $_POST["Hobbies"];  
+	  $name = $_POST['Name'];
+	  $dob = $_POST['DOB'];
+	  $course = $_POST['Course'];
+	  $yrOfStudy = $_POST['YearOfStudy'];
+	  $yrsOfActivity = $_POST['YearsOfActivity'];
+	  $position = $_POST['Position'];  
+	  $tag = $_POST['Tag'];  
+	  $hobbies = $_POST['Hobbies'];  
 	  
+	  if($_POST['Name']=="" || $_POST['DOB']=="" || $_POST['Course']=="" || $_POST['YearOfStudy'] || $_POST['Hobbies']){
+    echo "please fill in all necessary fields";
+  }else{
 
 	  $conn = connectToDb();
 	// Check connection
@@ -64,7 +67,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 
-	$sql = "INSERT INTO `player_profiles` (`Name`, `Birthday`, `Course`,`YearOfStudy`,`YearsOfActivity`, `Position`, `Tag`, `Hobbies`)
+	$sql = "INSERT INTO `Player_Profiles` (`Name`, `Birthday`, `Course`,`YearOfStudy`,`YearsOfActivity`, `Position`, `Tag`, `Hobbies`)
 					   VALUES ('".$name."', '".$dob."', '".$course."', '".$yrOfStudy."','".$yrsOfActivity."','".$position."','".$tag."','".$hobbies."')";
 
 	if ($conn->query($sql) === TRUE) {
@@ -74,7 +77,7 @@
 	}
 
 	$conn->close(); 
-
+	  }
 
 	}
 		
