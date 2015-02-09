@@ -11,7 +11,7 @@
 <form action="editProfiles.php" method="POST">
 	  <input type="submit" name="EDIT PROFILES" value="EDIT PROFILES"></input> <br /><br />
 </form>
-<form action="" method="POST">
+<form action="eventedit.php" method="POST">
 	  <input type="submit" name="EDIT EVENTS" value="EDIT EVENTS" ></input> <br /><br />
 </form>
 <form action="mredit.php" method="POST">
