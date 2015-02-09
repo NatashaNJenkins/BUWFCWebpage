@@ -14,7 +14,7 @@
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
 	</form>
-	<form>
+	<form action = "" method="POST">
 		<br><br>
 		Name:
 		<input type="text" name="Name">
@@ -42,16 +42,41 @@
 		Hobbies:
 		<input type="text" name="Hobbies">
 		<br><br>
-		<input type="submit" value="Submit">
+		<input type="submit" name="sub" value="Submit">
 		</form>
 		
 	<?php 
-	
-	 
-	 $conn = connectToDb();
-	 //Send info ro database
-		//$query = "SELECT * FROM `player_profiles`";
-	//	$response = mysqli_query($conn, $query);
+		if (isset($_POST["sub"])){
+
+	  $name = $_POST["Name"];
+	  $dob = $_POST["DOB"];
+	  $course = $_POST["Course"];
+	  $yrOfStudy = $_POST["YearOfStudy"];
+	  $yrsOfActivity = $_POST["YearsOfActivity"];
+	  $position = $_POST["Position"];  
+	  $tag = $_POST["Tag"];  
+	  $hobbies = $_POST["Hobbies"];  
+	  
+
+	  $conn = connectToDb();
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
+	$sql = "INSERT INTO `player_profiles` (`Name`, `Birthday`, `Course`,`YearOfStudy`,`YearsOfActivity`, `Position`, `Tag`, `Hobbies`)
+					   VALUES ('".$name."', '".$dob."', '".$course."', '".$yrOfStudy."','".$yrsOfActivity."','".$position."','".$tag."','".$hobbies."')";
+
+	if ($conn->query($sql) === TRUE) {
+		echo "New profile created successfully";
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+	$conn->close(); 
+
+
+	}
 		
 		
 	 include 'footer.php';
