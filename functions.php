@@ -8,17 +8,23 @@ else
 echo header('Location: login.php');
 }
 function connectToDb() {
-//DB connection data ++TO ENCAPSULATE
-$servername = "localhost";
-$username = "nmicic";
-$password = "pa55word";
-$db = "nmicic";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $db);
-// Check connection
-if ($conn->connect_errno>0) {
-die("Connection failed: " . $conn->connect_error);
-}
+
+	//DB connection data ++TO ENCAPSULATE
+    $servername = "localhost";
+	$username = "nmicic";
+	$password = "pa55word";
+	$db = "nmicic"; 
+	
+
+
+        // Create connection 
+	$conn = new mysqli($servername, $username, $password, $db);
+		
+	// Check connection
+	if ($conn->connect_errno>0) {
+	    die("Connection failed: " . $conn->connect_error);
+	}
+
 // echo "Connected successfully";
 return $conn;
 }
