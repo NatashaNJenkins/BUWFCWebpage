@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+	<meta charset="utf-8">
 	<title>BUWFC | Home</title>
 	<link rel="shortcut icon" href="favicon.ico" type="favicon.ico" />
 
