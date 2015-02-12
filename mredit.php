@@ -8,30 +8,47 @@ checkUser();
 
 
 if (isset($_POST['sub'])){
+
   
+
+
+  
+  if($_POST['date']=="" || $_POST['location']=="" || $_POST['opposition']=="" || $_POST['report']==""){
+    echo "please fill in all necessary fields";
+  }else{
  
+ 
+  $date = $_POST['date'];
+  $loc = $_POST['location'];
+  $opp = $_POST['opposition'];
+  $man = $_POST['man'];
+  $mup = $_POST['muppet'];
+  $rep = $_POST['report']; 
+    
+    //will retrieve all names from the profiles array 
+  $idmup = mysqli_query($conn, "SELECT Name, Player_ID FROM Player_Profiles WHERE `Name`='".$mup."'");
 
-  //will retrieve all names from the profiles array 
-  $name = mysqli_query($conn, "SELECT Name, Player_ID FROM Player_Profiles");
+  $idman = mysqli_query($conn, "SELECT Name, Player_ID FROM Player_Profiles WHERE `Name`='".$man."'");
 
-  while($row=mysqli_fetch_array($name, $conn)){
+  while($row=mysqli_fetch_array($idman,MYSQLI_ASSOC)){
+    
+    echo $row["Name"];
+    echo $row["Player_ID"];
+    $man=$row["Player_ID"];
 
-    echo $row[0];
+  }
+
+ while($row=mysqli_fetch_array($idmup, MYSQLI_ASSOC)){
+    
+    echo $row["Name"];
+    echo $row["Player_ID"];
+    $mup=$row["Player_ID"];
 
   }
 
 
-  $date = $_POST['date'];
-  $loc = $_POST['location'];
-  $opp = $_POST['opposition'];
-  $man = $_POST['nameman'];
-  $mup = $_POST['namemup'];
-  $rep = $_POST['report'];  
-  
-  if($_POST['date']=="" || $_POST['location']=="" || $_POST['opposition']=="" || $_POST['report']){
-    echo "please fill in all necessary fields";
-  }else{
- 
+    echo $man;
+    echo $mup;
 
 $sql = "INSERT INTO `Match` (`Date`, `Location`, `Opposition`,`Man_of_Match`,`Muppet_of_Match`, `Report`)
                    VALUES ('".$date."', '".$loc."', '".$opp."', '".$man."','".$mup."','".$rep."')";
@@ -68,11 +85,11 @@ if ($conn->query($sql) === TRUE) {
   Muppet of The Match  <select type="text" name="muppet">
 
 <?php
- $name = mysqli_query($conn, "SELECT Name FROM Player_Profiles");
+  $name = mysqli_query($conn, "SELECT Name FROM Player_Profiles");
 
   while($row=mysqli_fetch_array($name,MYSQLI_ASSOC)){
     
-    echo '<option name="namemup ">' . $row["Name"] .' </option>';
+    echo '<option name="namemup">' . $row["Name"] .' </option>';
   }?>
 
 </select> <br><br>
