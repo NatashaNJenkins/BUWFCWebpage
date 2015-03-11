@@ -4,7 +4,7 @@
  include 'functions.php';
  
  $conn = connectToDb();
-	$query = "SELECT * FROM `social_events`";
+	$query = "SELECT * FROM `Social_Events`";
 	$response = mysqli_query($conn, $query);
 	
 	if($response){

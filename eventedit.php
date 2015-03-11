@@ -40,15 +40,28 @@ $conn->close();
 
 
 ?>
+
+
+<div align=center>
+<h1> Add New Events</h1>
 <form action="" method="POST">
-  Name  <input type="text" name="name"></input> <br><br>
-  Date  <input type="date" name="date"></input> <br><br>
-  Location  <input type="text" name="loc"></input> <br><br>
-  Starts  <input type="time" name="start"></input> <br><br>
-  Finishes  <input type="time" name="fin"></input> <br><br>
-  Details  <textarea  name="det" rows="20" cols="60"></textarea><br><br>
+ <br></br>
+  Name:
+  <input type="text" name="name"></input> <br><br>
+  Date:  
+  <input type="date" name="date"></input> <br><br>
+  Location: 
+  <input type="text" name="loc"></input> <br><br>
+  Starts:  
+  <input type="time" name="start"></input> <br><br>
+  Finishes:  
+  <input type="time" name="fin"></input> <br><br>
+  Details: 
+  <textarea  name="det" rows="20" cols="60"></textarea><br><br>
   <input type="submit" name="sub" value="Save and Send"></input>
 </form>
+
+</div>
 
 <?php
 ?>

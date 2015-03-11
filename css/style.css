@@ -13,10 +13,47 @@
  position: fixed;
 }
  
+/*Form formatting*/
+
+input[type="submit"] { 
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #756f75;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #756f75;
+	box-shadow:inset 0px 1px 0px 0px #756f75;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000));
+	background:-moz-linear-gradient(top, #000000 5%, #000000 100%);
+	background:-webkit-linear-gradient(top, #000000 5%, #000000 100%);
+	background:-o-linear-gradient(top, #000000 5%, #000000 100%);
+	background:-ms-linear-gradient(top, #000000 5%, #000000 100%);
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0);
+	background-color:#000000;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+
+} 
+
+
+form{width:400px; margin: 0 auto;}
+
+
+/*end of form Tasha's edit*/
+
  .logo {
  	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	color: rgba(255,251,254,1);
-	font-size: 28px;
+	font-size: 18px;
 	text-shadow: rgba(0, 0, 0, 0.2) 2px 5px 9px, rgba(255, 255, 255, 0.298039) 0px -5px 35px;
 	line-height: 42px;
 	letter-spacing: 2px;
@@ -27,6 +64,8 @@
 	position:fixed;
  }
  
+
+
  .abovelogo {
   display: block;
 	float: left;
@@ -76,6 +115,8 @@
 	text-decoration:none;
 	color:white;
 }
+
+
 
 
 /*#container {

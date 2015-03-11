@@ -65,6 +65,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 ?>
+<div align=center>
+<h1> Add a match report </h1>
 
 <form action="" method="POST">
   Date  <input type="date" name="date"></input> <br><br>
@@ -97,6 +99,8 @@ if ($conn->query($sql) === TRUE) {
 </textarea><br><br>
   <input type="submit" name="sub" value="Save and Send"></input>
 </form>
+
+</div>
 
 <?php
 

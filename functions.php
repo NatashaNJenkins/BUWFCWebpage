@@ -1,5 +1,17 @@
 <?php
+
 session_start();
+
+
+function clean($conn,$str) {
+$str = @trim($str);
+if(get_magic_quotes_gpc()) {
+$str = stripslashes($str);
+}
+return mysqli_real_escape_string($conn,$str);
+}
+
+
 function checkUser() {
 if( isset($_SESSION['buwfclogin']) ) {
 echo '<div id="adminWidget">You are logged in as ' . $_SESSION['buwfclogin'] . ' !<br /> <a href="logout.php">logout</a></div>';

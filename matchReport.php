@@ -5,7 +5,7 @@
  include 'functions.php';
  
  $conn = connectToDb();
-	$query = "SELECT * FROM `match`";
+	$query = "SELECT * FROM `Match`";
 	$response = mysqli_query($conn, $query);
 	
 	if($response){

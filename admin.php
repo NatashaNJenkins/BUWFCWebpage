@@ -6,7 +6,7 @@
 	checkUser();
 ?>
 
-<div>
+<div align=center>
 
 <form action="editProfiles.php" method="POST">
 	  <input type="submit" name="EDIT PROFILES" value="EDIT PROFILES"></input> <br /><br />
