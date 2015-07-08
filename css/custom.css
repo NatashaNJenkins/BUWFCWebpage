@@ -209,7 +209,14 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 
 
-body{background-image: none; background-position: initial initial; background-repeat: initial initial; }
+body{background-image: none;
+ background-position: initial initial;
+ background-repeat: initial initial;
+
+/*added height*/
+
+height:100%
+ }
 
 #divLogo{margin-top: 9px; margin-bottom: 0px; margin-left: -3px;}
 

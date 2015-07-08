@@ -11,12 +11,11 @@
 	<body>
 	<div align=center>
 	<h1> Add Player Profile </h1>
-	<form action="" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-	<form>
-	<form action = "" method="POST">
+
+	<form action = "" method="POST"  enctype="multipart/form-data">
+
+	        Select image to upload:
+	        <input type="file" name="fileToUpload" id="fileToUpload" >
 		<br><br>
 		Name:
 		<input type="text" name="Name">
@@ -68,8 +67,9 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 	  
-		  if($_POST['Name']=="" || $_POST['DOB']=="" || $_POST['Course']=="" || $_POST['YearOfStudy']=="" || $_POST['Hobbies']=="" ||empty($_FILES['filesToUpload']['name'])){
+		  if($_POST['Name']=="" || $_POST['DOB']=="" || $_POST['Course']=="" || $_POST['YearOfStudy']=="" || $_POST['Hobbies']==""){
     echo "please fill in all necessary fields";
+
   }else{
 
 	 
@@ -93,7 +93,7 @@ $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
     }
 }
 // Check if file already exists
-if (file_exists($target_file)) {
+		  if (file_exists($target_file. (".jpg"))) {
     echo "Sorry, file already exists.";
     $uploadOk = 0;
 }

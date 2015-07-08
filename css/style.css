@@ -118,16 +118,23 @@ form{width:400px; margin: 0 auto;}
 
 
 
-
-/*#container {
-  min-height: 1100px;
+#container {
+  min-height: 100%;
   width: 70%;
+  position:relative;
   margin-left: auto;
   margin-right: auto;
   padding: 140px 40px 0px 40px;
-}*/
+}
+
+#body {
+   padding:10px;
+   padding-bottom:120px;  
+}
+
  
 #footer {
+position:absolute;
  width: 100%;
  height: 120px;
  background-color: black; 
@@ -148,13 +155,19 @@ form{width:400px; margin: 0 auto;}
  font-weight: none;
  text-decoration: none;
  float: right;
+ position:absolute;
+ bottom:0;
+ left:0;
 }
  
 #footer {
+
  color: white;	
  font-family: 'Open Sans', sans-serif;
  font-size: 12px;
  padding-top: 32px; 
+
+
 }
  
 .profileBox {
