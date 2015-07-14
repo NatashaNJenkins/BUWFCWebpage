@@ -1,14 +1,16 @@
+<div id="footerOuterSeparator"></div>
+
+
 </div>
 <!-- CONTENT END -->
 
-<div id="footerOuterSeparator"></div>
-
+  
 <div id="divFooter" class="footerArea">
-    <div class="container">
+     <div class="container"> 
 
         <div class="divPanel">
             <div class="row-fluid">
-                <div class="span12">
+                <div class="span12"> 
                     
                     <p class="copyright">
                         Copyright © 2015 Pi Society - University of Bradford. All Rights Reserved.
