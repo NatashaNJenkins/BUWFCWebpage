@@ -188,6 +188,32 @@ position:absolute;
   margin-right: 40px;
   margin-bottom: 30px;
 }
+
+.eventBox {
+  background-color: black;
+  font-family:'Slabo 27px', serif;
+  color: white;
+  float: left;
+  width: 250px;
+  height: 200px;
+  padding:10px;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.reportBox {
+  background-color: black;
+  font-family:'Slabo 27px', serif;
+  color: white;
+  float: left;
+  width: 250px;
+  height: 200px;
+  padding:10px;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
   
 .placeHolderPic {
   width: 200px;
