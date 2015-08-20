@@ -4,6 +4,10 @@
  include 'functions.php';
  
 
+
+
+
+
  $conn = connectToDb();
 	$query = "SELECT * FROM `Player_Profiles`";
 	$response = mysqli_query($conn, $query);
@@ -19,6 +23,9 @@
 		} 
 		
 	}
+
+	
+
  include 'footer.php';
 ?>
 </html>

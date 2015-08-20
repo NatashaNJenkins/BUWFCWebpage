@@ -30,7 +30,7 @@ input[type="submit"] {
 	background-color:#000000;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
-	border-radius:6px;
+                    	border-radius:6px;
 	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
@@ -124,9 +124,9 @@ form{width:400px; margin: 0 auto;}
   position:relative;
   margin-left: auto;
   margin-right: auto;
-  padding: 140px 40px 0px 40px;
+  padding: 50px 40px 0px 40px;
 
-  
+  text-align:center;
                  min-height:100%;
 		 margin-bottom:-120px;
 
@@ -138,13 +138,13 @@ form{width:400px; margin: 0 auto;}
 }
 
  
-/*#footer {
+#footer {
 position:absolute;
  width: 100%;
  height: 120px;
  background-color: black; 
  bottom: 0;
-}*/
+}
  
 #adminWidget {
  background-color: white;
@@ -165,7 +165,7 @@ position:absolute;
  left:0;
 }
  
-/*#footer {
+#footer {
 
  color: white;	
  font-family: 'Open Sans', sans-serif;
@@ -173,27 +173,36 @@ position:absolute;
  padding-top: 32px; 
 
 
-}*/
+}
 
  
 .profileBox {
   background-color: black;
   font-family:'Slabo 27px', serif;
   color: white;
-  float: left;
+ 
+  /*float:left;*/
   width: 250px;
   height: 400px;
   padding:10px;
   border-radius: 10px;
   margin-right: 40px;
   margin-bottom: 30px;
+  display: inline-block;
+  
 }
+
+.profileBox:hover {
+	transition-duration: .3s;
+	background-color: #B22222;
+	}
+	
 
 .eventBox {
   background-color: black;
   font-family:'Slabo 27px', serif;
   color: white;
-  float: left;
+  display: inline-block;
   width: 250px;
   height: 200px;
   padding:10px;
@@ -206,7 +215,7 @@ position:absolute;
   background-color: black;
   font-family:'Slabo 27px', serif;
   color: white;
-  float: left;
+  display: inline-block;
   width: 250px;
   height: 200px;
   padding:10px;
@@ -218,7 +227,7 @@ position:absolute;
 .placeHolderPic {
   width: 200px;
   height: 200px;
-  background-color: black;
+           background-color: black;
 }
   
 .placeHolderPic img {

@@ -1,6 +1,6 @@
 <div id="footerOuterSeparator"></div>
 
-
+</div>
 </div>
 <!-- CONTENT END -->
 

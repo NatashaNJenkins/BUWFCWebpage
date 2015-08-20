@@ -92,7 +92,7 @@ margin-right:7px;margin-bottom:7px;float:left;
 
 #decorative1 {
 	margin-top:-2px;
-	padding-top:700px;
+	padding-top:500px;
 }
 
 
@@ -213,9 +213,6 @@ body{background-image: none;
  background-position: initial initial;
  background-repeat: initial initial;
 
-/*added height*/
-
-height:100%
  }
 
 #divLogo{margin-top: 9px; margin-bottom: 0px; margin-left: -3px;}
@@ -287,14 +284,14 @@ h1 {
 	font-size: 40px;
 	line-height: 65px;
 	margin-top: 0px;
-	color: rgba(255,255,255,1);
+	color: #FFFFFF;
 }
 
 .page-content {line-height: 25px; font-family: 'Open Sans', sans-serif;}
 
 .page-content a {color: rgb(164, 39, 143); font-family: 'Open Sans', sans-serif;}
 
-#decorative1 {position: relative;  background-image: url(squad.jpg); background-position: 100% 50%; background-repeat: no-repeat no-repeat;}
+#decorative1 {  background-image: url('../img/banner.jpg');  background-repeat: no-repeat no-repeat;}
 
 #decorative2{background-color: black; height: 85px;}
 
@@ -348,7 +345,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
 #divHeaderText {padding-top: 200px; padding-bottom: 30px; border-color: rgb(51, 51, 51); text-align: left;}
 
-#decorative1 {-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+#decorative1 {-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:1500px;}
 
 #contentOuterSeparator{margin-top: 0px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; margin-bottom: 25px; height: 0px; background-color: transparent;}
 
@@ -476,7 +473,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
     body {padding-top:0px}
 
     
-    #divFooter {margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px; height:120px; position:relative; }
+    #divFooter {margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px; height:120px; position:relative;width: 100%; }
     
   * #divBoxed > #divFooter {margin-left:0px;margin-right:0px;padding-left:0px;padding-right:0px;}
 
